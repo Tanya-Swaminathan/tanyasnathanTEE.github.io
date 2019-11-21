@@ -1,0 +1,281 @@
+@charset "utf-8";
+/* CSS Document */
+.logo {
+	max-height: 100pt;
+	max-width: 100pt;
+}
+
+.btn-default-next {
+	background-color: #C75F00;
+	color: white;
+	width: 340pt;
+	height: 30pt;
+} 
+
+.next-btn {
+	background-color: #C75F00;
+	color: white;
+}
+
+.nav-link {
+	color: black; 
+}
+
+#firstBox {
+	padding-left: 90px;
+	width: 500px;
+	height: 300px;
+}
+
+#from-to {
+	position: absolute;
+	top:395px;
+	left:325px;
+	padding-top: 200px;
+	padding-left: 12px;
+	background: rgba(100,30,0,0.2);
+	width: 19%;
+	height:44%;
+	text-align: left;
+	opacity: 0;
+	transition: all .3s Ease-in-Out;
+}
+
+#firstBox:hover .overlay{
+	opacity:1;
+}
+
+#secondBox {
+	width: 400px;
+	height: 300px;
+}
+
+#secondBox:hover .overlay{
+	opacity: 1;
+}
+
+#customise {
+	position: absolute;
+	top:395px;
+	left:770px;
+	padding-top: 200px;
+	padding-left: 12px;
+	background: rgba(100,30,0,0.2);
+	width: 19%;
+	height:44%;
+	text-align: left;
+	opacity: 0;
+	transition: all .3s Ease-in-Out;
+}
+
+#thirdBox {
+	
+	width: 300px;
+	height: 300px;
+}
+
+#trending {
+	position: absolute;
+	top:395px;
+	left:1185px;
+	padding-top: 200px;
+	padding-left: 12px;
+	background: rgba(100,30,0,0.2);
+	width: 19%;
+	height:44%;
+	text-align: left;
+	opacity: 0;
+	transition: all .3s Ease-in-Out;
+}
+
+#thirdBox:hover .overlay{
+	opacity: 1;
+}
+
+.packages {
+	padding-left: 10pt;
+}
+
+.heading {
+	padding-left: 10pt;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+	margin: 10pt;
+  }
+}
+
+@media screen and (max-width: 800px){
+	.box {
+	
+		margin:10pt 0;
+	}
+}
+
+@media screen and (max-width: 800px){
+	.overlay {
+		
+		margin:10pt 0;
+	}
+}
+@media (max-width: 800px) {
+  .col-lg-4 input {
+    margin: 10px 0;
+  }
+}
+.box {
+	width: 200pt;
+	height: 100pt;
+}
+
+.form-inline {  
+  display:inline-flex;
+  align-items: center;
+}
+
+.form-inline label {
+  margin: 0 10px 0 ;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.form-inline button {
+  padding: 10px 20px;
+  background-color: #C75F00;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+}
+
+.form-inline button:hover {
+  background-color: #894100;
+}
+
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+  
+  .form-inline {
+    flex-direction: column;
+    align-items:center;
+  }
+}
+
+h3 {
+	padding: 10pt 0 0 10pt;
+}
+
+p{
+	padding-left:10pt;
+}
+h2{
+	padding: 10pt 0 0 10pt;
+}
+
+.page {
+	padding-left: 10pt;
+	padding-right: 10pt;
+}
+
+.accordion {
+  font-size: 1rem;
+  width: 30vw;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.accordion-header,
+.accordion-body {
+  background: white;
+}
+
+.accordion-header {
+  padding: 1.5em 1.5em;
+  background: #C75F00;
+  color: white;
+  cursor: pointer;
+  font-size: .7em;
+  letter-spacing: .1em;
+  transition: all .3s;
+  text-transform: uppercase;
+}
+
+.accordion__item {
+    border-bottom: 1px;
+}
+
+.accordion__item .accordion__item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.accordion-header:hover {
+  background: #964700;
+  position: relative;
+  z-index: 5;
+}
+
+.accordion-body {
+  background: #fcfcfc;
+  color: #353535;
+  display: none;
+}
+
+.accordion-body__contents {
+  padding: 1.5em 1.5em;
+  font-size: .85em;
+}
+
+.accordion__item.active:last-child .accordion-header {
+  border-radius: none;
+}
+
+.busimage{
+	max-height: 300pt;
+	max-width: 270pt;
+}
+
+.accordion:first-child > .accordion__item > .accordion-header {
+  border-bottom: 1px solid transparent;
+}
+
+.accordion__item > .accordion-header:after {
+  content: "\f3d0";
+  font-family: IonIcons;
+  font-size: 1.2em;
+  float: right;
+  position: relative;
+  top: -2px;
+  transition: .3s all;
+  transform: rotate(0deg);
+}
+
+.accordion__item.active > .accordion-header:after {
+  transform: rotate(-180deg);
+}
+
+.accordion__item.active .accordion-header {
+  background: #C75F00;
+}
+
+.accordion__item .accordion__item .accordion-header {
+  background: #f1f1f1;
+  color: #353535;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    padding: 1em;
+  }
+  
+  .accordion {
+    width: 100%;
+  }
+}
